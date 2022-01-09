@@ -1,0 +1,71 @@
+package book.cgyms.chainConstructor;
+
+public class Person {
+	private String color;
+	private String country;
+	private String sex;
+	private String ageArea;
+
+	// TODO ����������캯��
+	public Person(String color) {
+		this(color, "δ֪");//TODO �������?�캯����this(),��������new
+	}
+	
+	public Person(String color, String country) {
+		this(color, country, "δ֪");
+	}
+
+	public Person(String color, String country, String sex) {
+		this(color, country, sex, "δ֪");
+	}
+
+	public Person(String color, String country, String sex, String ageArea) {
+		this.color = color;
+		this.country = country;
+		this.sex = sex;
+		this.ageArea = ageArea;
+	}
+
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("����һ������");
+		sb.append(this.getCountry()).append("��");
+		sb.append(this.getColor()).append("Ƥ��");
+		sb.append(this.getAgeArea()).append("��");
+		sb.append(this.getSex()).append("��");
+		return sb.toString();
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getAgeArea() {
+		return ageArea;
+	}
+
+	public void setAgeArea(String ageArea) {
+		this.ageArea = ageArea;
+	}
+
+}

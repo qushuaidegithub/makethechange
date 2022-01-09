@@ -1,0 +1,9 @@
+java集合主要分两个分支Collection接口以及Map接口
+Collection的子接口有List,Set
+Collection的实现类有AbstractCollection
+        (List)AbstractList;(Set)AbstractSet
+          ArrayList,Vector;HashSet,TreeSet
+                LinkedList;LinkedHashSet
+Map的实现类有AbstractMap;HashTable
+		HashMap,TreeMap
+	LinkedHashMap
